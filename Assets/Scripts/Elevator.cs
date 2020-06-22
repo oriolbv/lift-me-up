@@ -17,10 +17,8 @@ public class Elevator : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)) 
-        {
-            Vector3 forceApplied = new Vector3(10, 10 , 10);
-     
-            rb.AddForce(forceApplied);
+        {    
+            rb.AddForce(new Vector2(0f, transform.up.y * 200), ForceMode2D.Force);
         }
     }
 }
