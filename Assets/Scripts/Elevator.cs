@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Elevator : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class Elevator : MonoBehaviour
     // Total distance between the markers.
     private float journeyLength;
 
+    private Touch theTouch;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,15 +42,25 @@ public class Elevator : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.Space)) {
-            Debug.Log("UP");
             gas = true;
         }
         else {
-            Debug.Log("DOWN");
             gas = false;
         }
-
-        
+        // Mobile touch inputs
+        if (Input.touchCount > 0)
+        {
+            Debug.Log("Touch detected!");
+            theTouch = Input.GetTouch(0);
+            if (theTouch.phase == TouchPhase.Began)
+            {
+                gas = true;
+            }
+            else if (theTouch.phase == TouchPhase.Ended)
+            {
+                gas = false;
+            }
+        }
     }
 
     private void FixedUpdate() {
