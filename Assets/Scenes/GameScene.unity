@@ -374,6 +374,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elevatorForce: 30
+--- !u!1 &821138601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 821138603}
+  - component: {fileID: 821138602}
+  m_Layer: 0
+  m_Name: EdgeCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!68 &821138602
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821138601}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.05}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.5897527, y: 9.477671}
+  - {x: -3.8088324, y: 9.466867}
+  - {x: -3.7948537, y: 7.589167}
+  - {x: -1.9516917, y: 7.575367}
+  - {x: -3.816032, y: 7.575508}
+  - {x: -3.8608243, y: -3.9377668}
+  - {x: 1.6373599, y: -4.0163374}
+  - {x: 1.646869, y: -3.2731264}
+  - {x: 1.6467967, y: -2.234112}
+  - {x: -0.2710377, y: -2.224566}
+  - {x: 1.6562982, y: -2.2245662}
+  - {x: 1.6466048, y: -0.20519361}
+  - {x: -0.2922287, y: -0.22284654}
+  - {x: 1.6527925, y: -0.19606295}
+  - {x: 1.6486826, y: 1.6971396}
+  - {x: -0.24035025, y: 1.687473}
+  - {x: 1.6352575, y: 1.6872063}
+  - {x: 1.6489165, y: 3.6555555}
+  - {x: -0.28820086, y: 3.6458364}
+  - {x: 1.6363826, y: 3.6559777}
+  - {x: 1.6368358, y: 5.5842957}
+  - {x: -0.25245142, y: 5.593156}
+  - {x: 1.6329536, y: 5.5937977}
+  - {x: 1.6344936, y: 7.5511475}
+  - {x: -0.27453917, y: 7.550967}
+  - {x: 1.629147, y: 7.5506845}
+  - {x: 1.5717757, y: 9.47323}
+--- !u!4 &821138603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821138601}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0507324, y: -0.48282644, z: -0.029467387}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1241388040
 GameObject:
   m_ObjectHideFlags: 0
