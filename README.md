@@ -1,2 +1,2 @@
 # Lift me up
-Control a lift and make neighbours happy
+Mobile game developed with Unity3D where you can control a lift and make neighbours happy
